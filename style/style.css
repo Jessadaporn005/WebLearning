@@ -3,85 +3,137 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Revalia", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-html {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
+html, body {
+  height: 100%;
 }
 
 body {
-  background: url(https://static.wixstatic.com/media/c837a6_02de7d4c43d44b7b890854049ed75da8f000.jpg/v1/fill/w_1631,h_840,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/c837a6_02de7d4c43d44b7b890854049ed75da8f000.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: none;
+}
+
+/* hero wrapper holds the background for header + homesection only */
+.hero-wrapper{
+  background: url(https://static.wixstatic.com/media/c837a6_02de7d4c43d44b7b890854049ed75da8f000.jpg/v1/fill/w_1631,h_840,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/c837a6_02de7d4c43d44b7b890854049ed75da8f000.jpg) no-repeat center bottom/cover;
+  /* background-attachment: fixed; */
 }
 
 .heading {
-  margin-top: 2rem;
-  padding-left: 3rem;
-  margin-right: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 2.5rem;
+  background: transparent;
 }
-  
-div.navbar-menu{
+
+.heading h1 { color: #fff; }
+
+.navbar-menu{
   display: flex;
   justify-content: flex-end;
   position: relative;
+  align-items: center;
+  gap: 0.8rem;
 }
 
-
-
 .navbar-menu a {
-  display: flex;
-  display: inline-flex;
-  top: 0;
-  margin-top: -1.6rem;
   text-decoration: none;
   text-transform: uppercase;
-  color: black;
+  color: #fff;
   cursor: pointer;
-  justify-content: center;
+  font-size: 15px;
+  padding: 0.35rem 0.6rem;
+  display: inline-flex;
   align-items: center;
-  text-align: center;
-  font-size: 18px;
-  margin-right: 1rem;
-  &.btn {
-    display: block;
-    display: inline-block;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: rgb(247, 247, 247);
-    cursor: pointer;
-    border: solid rgb(0, 0, 0);
-    background-color: black;
-    border-radius: 0.5rem;
-    
-  }
+  justify-content: center;
+}
+
+.navbar-menu a.btn {
+  color: rgb(247, 247, 247);
+  border: 1px solid rgb(0, 0, 0);
+  background-color: black;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.8rem;
 }
 
 /* section home  */
-
 section.homesection {
+  /* width: 100%; */
   display: flex;
   justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 72px);
+  padding: 3.5rem 2rem 10vh 2rem;
+  /* background moved to body so header/navbar can sit on the same image */
 }
 
-div.home-conent{
-  margin-top: 5rem;
+
+
+.home-content{
+  margin-top: 0; /* controlled by section padding */
   text-align: center;
-
-  & p {
-    margin-top: 2rem;
-    font-size: 1.5rem;
-  }
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 1rem;
+  padding-bottom: 17vh; /* keep text above the car image */
 }
 
-div.home-conent span {
+.home-content p {
+  margin-top: 1.2rem;
+  font-size: clamp(1rem, 1.8vw, 1.4rem);
+  color: rgba(0,0,0,0.85);
+}
+
+.home-content span {
   color: rgb(25, 0, 255);
-  
+}
+
+.home-content h1{
+  font-size: clamp(2rem, 6vw, 3.6rem);
+  line-height: 1.05;
+  margin: 0 auto;
+  max-width: 900px;
+  color: rgba(0,0,0,0.95);
+  text-align: center;
+}
+
+.seccon-wrapper {
+  height: 100%;
+  width:100%;
+  background: rgba(0,0,0,0.85);
 }
 
 
+
+
+.about-car-content {
+  max-width: 900px;
+  margin: 0  10rem;
+  padding: 1rem 0;
+  padding: 3.5rem 2rem;
+  color: #fff;
+}
+
+
+
+.about-car-content h6,
+.about-car-content h2,
+.about-car-content p{
+  color: #fff;
+}
+
+.about-car-content h2{
+  font-size: 2rem;
+  line-height: 1.15;
+  margin: 1rem 0 1.2rem 0;
+}
+
+.about-car-content p{
+  color: rgba(255,255,255,0.9);
+  font-size: 1rem;
+}
