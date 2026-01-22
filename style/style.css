@@ -165,3 +165,67 @@ section.homesection {
   line-height: 2.5ch;
   letter-spacing: 2.6px;
 }
+
+/* section service */
+
+section.service {
+  width: 100%;
+  height: 100%;
+  
+}
+
+
+div.img-car-service {
+  background-image: url(https://static.wixstatic.com/media/84770f_3cc097e7503b4ed498e350c6618ef956~mv2.jpg/v1/fill/w_816,h_680,al_l,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/84770f_3cc097e7503b4ed498e350c6618ef956~mv2.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  
+}
+
+
+div.top-title {
+  display: flexbox;
+  padding: 5rem 14rem;
+}
+
+.top-title h5 {
+  font-size: 28px;
+  padding: 2rem 0;
+  font-weight: bold;
+}
+
+.top-title p {
+  letter-spacing: 2.6px;
+  font-size: 18px;
+  line-height: 2.5rem;
+ }
+
+ div.seccon-title {
+   display: flexbox;
+  padding: 2rem 14rem;
+ }
+
+.seccon-title h2 {
+  line-height: 2ch;
+  padding: 3rem 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.seccon-title p {
+  letter-spacing: 2.6px;
+  font-size: 15px;
+  line-height:30px;
+  
+}
+
+section.service a {
+  margin-left: 14rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border: rgb(0, 0, 0) solid 2px;
+  background-color: black;
+  border-radius: 1.5rem;
+}
+
