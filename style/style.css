@@ -229,3 +229,47 @@ section.service a {
   border-radius: 1.5rem;
 }
 
+      /* <!-- section Realtime --> */
+section.realtime-informatiom {
+  width: auto;
+  height: 100%;
+  background: url(https://static.wixstatic.com/media/84770f_abca8ce0bac24971a57d1f9d40b8238b~mv2.jpg/v1/fill/w_816,h_680,al_r,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/84770f_abca8ce0bac24971a57d1f9d40b8238b~mv2.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.realtime-content .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.realtime-content .content h2 {
+  margin-top: 17rem;
+  font-size: 3rem;
+  padding: 0 15rem;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+
+
+.realtime-content .content p {
+  max-width: 420px;   /* คุมความกว้าง */
+  margin-left: auto;  /* ดันไปขวา */
+  margin-right: 19rem;
+  margin-top: 8rem;
+  padding: 0;
+  text-align: right;
+  line-height: 1.8;
+}
+
+section.realtime-informatiom a {
+  margin-top: 2.5rem;
+  margin-right: 19rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border: rgb(0, 0, 0) solid 2px;
+  background-color: black;
+  border-radius: 0rem;
+}
